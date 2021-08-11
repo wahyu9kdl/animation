@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="icon" href="">
+	<title>Animation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		@keyframes animate-kanan-kiri {
+			from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-webkit-keyframes animate-kanan-kiri {
+		    from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-moz-keyframes animate-kanan-kiri {
+		    from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+		@-ms-keyframes animate-kanan-kiri {
+		    from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+			to { background-position: -20% 70px, -1000px 0px, -500px 0px; }
+		}
+
+		@keyframes animate-kudalaut {
+		  0%   {background-position:850px 600px;}
+		  100% {background-position:100px 0px;}
+		}
+		@-webkit-keyframes animate-kudalaut {
+		  0%   {background-position:850px 600px;}
+		  100% {background-position:100px 0px;}
+		}
+		@-moz-keyframes animate-kudalaut {
+		  0%   {background-position:850px 600px;}
+		  100% {background-position:100px 0px;}
+		}
+		@-ms-keyframes animate-kudalaut {
+		  0%   {background-position:850px 600px;}
+		  100% {background-position:100px 0px;}
+		}
+
+		@keyframes move-lumba {
+			from { background-position: -20% 70px, -1000px 0px, -500px 0px;  } 
+			to { background-position: 120% 70px, 0px 0px, 0px 0px; }
+		}
+		@-webkit-keyframes move-lumba {
+		    from { background-position: -20% 70px, -1000px 0px, -500px 0px;  } 
+			to { background-position: 120% 70px, 0px 0px, 0px 0px; }
+		}
+		@-moz-keyframes move-lumba {
+		    from { background-position: -20% 70px, -1000px 0px, -500px 0px;  } 
+			to { background-position: 120% 70px, 0px 0px, 0px 0px; }
+		}
+		@-ms-keyframes move-lumba {
+		    from { background-position: -20% 70px, -1000px 0px, -500px 0px;  } 
+			to { background-position: 120% 70px, 0px 0px, 0px 0px; }
+		}
+
+		@keyframes move-fish0 {
+		    from {background-position:0 0;}
+		    to {background-position:1000px 2000px;}
+		}
+		@-webkit-keyframes move-fish0 {
+		    from {background-position:0 0;}
+		    to {background-position:1000px 2000px;}
+		}
+		@-moz-keyframes move-fish0 {
+		    from {background-position:0 0;}
+		    to {background-position:1000px 2000px;}
+		}
+		@-ms-keyframes move-fish0 {
+		    from {background-position:0 0;}
+		    to {background-position:1000px 2000px;}
+		}
+
+
+		@keyframes move-layar-back {
+		    from {background-position:1000px 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-webkit-keyframes move-layar-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-moz-keyframes move-layar-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-ms-keyframes move-layar-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+
+		.sea, .layar, .layar2, .fish, .whale, .whale2, .shark, .fish0, .fish1, .fish2, .fish3, .lumba, .kudalaut {
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			width:100%;
+			display:block;
+		}
+
+		.kapal {
+			-ms-transform: rotate(1deg);
+			-webkit-transform: rotate(1deg);
+			transform: rotate(1deg);
+			margin: 300px 0px 0px 45%;
+		}
+
+		.sea {
+			background:#000 url(images/sea.gif) no-repeat top center;
+			background-size: cover;
+		}
+
+		.layar2 {
+			margin-top: 475px;
+			background-size: 60px;
+			background-image: url(images/layar.gif);
+			background-position: 120% 70px, 0px 0px, 0px 0px;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+			-moz-animation: animate-kanan-kiri linear 50s infinite;
+			-ms-animation: animate-kanan-kiri linear 50s infinite;
+			-o-animation: animate-kanan-kiri linear 50s infinite;
+			-webkit-animation: animate-kanan-kiri linear 50s infinite;
+			animation: animate-kanan-kiri linear 50s infinite;
+		}
+
+		.layar {
+			margin-top: 475px;
+			background-size: 60px;
+			background-image: url(images/layar.gif);
+			background-position: 120% 70px, 0px 0px, 0px 0px;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+			-moz-animation: move-layar-back linear 50s infinite;
+			-ms-animation: move-layar-back linear 50s infinite;
+			-o-animation: move-layar-back linear 50s infinite;
+			-webkit-animation: move-layar-back linear 50s infinite;
+			animation: move-layar-back linear 50s infinite;
+		}
+
+		.shark {
+			margin-top: 400px;
+			background-size: 150px;
+			background-image: url(images/shark.gif);
+			background-repeat: no-repeat, repeat-x, repeat-x;
+			-moz-animation: animate-kanan-kiri linear 20s infinite;
+			-ms-animation: animate-kanan-kiri linear 20s infinite;
+			-o-animation: animate-kanan-kiri linear 20s infinite;
+			-webkit-animation: animate-kanan-kiri linear 20s infinite;
+			animation: animate-kanan-kiri linear 20s infinite;
+		}
+
+		.whale {
+			margin: 0px auto;
+			background-size: 300px;
+			background-image: url(images/whale.gif);
+			background-position: 120% 70px, 0px 0px, 0px 0px;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+			-moz-animation: animate-kanan-kiri linear 50s infinite;
+			-ms-animation: animate-kanan-kiri linear 50s infinite;
+			-o-animation: animate-kanan-kiri linear 50s infinite;
+			-webkit-animation: animate-kanan-kiri linear 50s infinite;
+			animation: animate-kanan-kiri linear 50s infinite;
+		}
+		.whale2 {
+			margin: 0px auto;
+			background-size: 150px;
+			background-image: url(images/whale.gif);
+			background-position: 150% 70px, 50px 0px, 0px 0px;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+			-moz-animation: animate-kanan-kiri linear 53s infinite;
+			-ms-animation: animate-kanan-kiri linear 53s infinite;
+			-o-animation: animate-kanan-kiri linear 53s infinite;
+			-webkit-animation: animate-kanan-kiri linear 53s infinite;
+			animation: animate-kanan-kiri linear 53s infinite;
+		}
+
+		.fish1{
+			margin-top: 200px;
+			background-size: 50px;
+		    background-image: url(images/fish3.gif);
+		    -moz-animation: animate-kanan-kiri linear 13s infinite;
+			-ms-animation: animate-kanan-kiri linear 13s infinite;
+			-o-animation: animate-kanan-kiri linear 13s infinite;
+			-webkit-animation: animate-kanan-kiri linear 13s infinite;
+			animation: animate-kanan-kiri linear 13s infinite;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+		}
+		.fish2{
+			margin-top: 350px;
+			background-size: 50px;
+		    background-image: url(images/fish.gif);
+		    -moz-animation: animate-kanan-kiri linear 73s infinite;
+			-ms-animation: animate-kanan-kiri linear 73s infinite;
+			-o-animation: animate-kanan-kiri linear 73s infinite;
+			-webkit-animation: animate-kanan-kiri linear 73s infinite;
+			animation: animate-kanan-kiri linear 73s infinite;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+		}
+		.fish3{
+			margin-top: 500px;
+			background-size: 50px;
+		    background-image: url(images/fish.gif);
+		    -moz-animation: animate-kanan-kiri linear 153s infinite;
+			-ms-animation: animate-kanan-kiri linear 153s infinite;
+			-o-animation: animate-kanan-kiri linear 153s infinite;
+			-webkit-animation: animate-kanan-kiri linear 153s infinite;
+			animation: animate-kanan-kiri linear 153s infinite;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+		}
+
+		.kudalaut {
+			margin: 0px auto;
+			background-size: 70px;
+			background-image: url(images/kudalaut.gif);
+			background-position: 120% 70px, 0px 0px, 0px 0px;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+			-moz-animation: animate-kudalaut linear 50s infinite;
+			-ms-animation: animate-kudalaut linear 50s infinite;
+			-o-animation: animate-kudalaut linear 50s infinite;
+			-webkit-animation: animate-kudalaut linear 50s infinite;
+			animation: animate-kudalaut linear 50s infinite;
+		}
+
+		.lumba{
+			margin-top: 0;
+			background-size: 120px;
+		    background-image: url(images/lumba.gif);
+		    -moz-animation: move-lumba linear 73s infinite;
+			-ms-animation: move-lumba linear 73s infinite;
+			-o-animation: move-lumba linear 73s infinite;
+			-webkit-animation: move-lumba linear 73s infinite;
+			animation: move-lumba linear 73s infinite;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+		}
+
+		.fish0{
+			margin-top: 200px;
+			background-size: 50px;
+		    background-image: url(images/fish2.gif);
+		    -moz-animation: move-fish0 linear 200s infinite;
+			-ms-animation: move-fish0 linear 200s infinite;
+			-o-animation: move-fish0 linear 200s infinite;
+			-webkit-animation: move-fish0 linear 200s infinite;
+			animation:move-fish0 200s linear infinite;
+			background-repeat: no-repeat, repeat-x, repeat-x;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-transparent fixed-top">
+	  <a class="navbar-brand" href="index.php" style="color: #fff;">
+	    Animation
+	  </a>
+	</nav>
+
+	<div class="background-sea">
+		<div class="sea"></div>
+		<div class="whale"></div>
+		<div class="whale2"></div>
+		<div class="layar"></div>
+		<div class="layar2"></div>
+		<div class="shark"></div>
+		<div class="fish0"></div>
+		<div class="fish1"></div>
+		<div class="fish2"></div>
+		<div class="fish3"></div>
+		<div class="lumba"></div>
+		<div class="kudalaut"></div>
+	</div>
+
+	<img src="images/kapal.gif" alt="kapal" class="kapal" width="290px">
+
+	<div class="fixed-bottom" align="center">
+		<div class="text-white">
+			© <?php echo date('Y'); ?> Copyright :
+		    <a class="text-white" href="https://www.awgroupchannel.my.id/"> Animation </a>
+		</div>
+	</div>
+</body>
+</html>
