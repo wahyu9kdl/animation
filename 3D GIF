@@ -1,0 +1,251 @@
+<p><strong>3D ANIMATION DENGAN HTML ,CSS3D, JS , DAN JQUERY&nbsp;</strong></p>
+<p>&nbsp;</p>
+<p>Inspirasi Buat Para Programing dan Desainner .&nbsp;</p>
+<p>&nbsp;</p>
+<p>Pada Artikel ini kami bagikan Score code HTML , CSS ,DAN JS Untuk membuat 3D ANIMATION GIF .&nbsp;</p>
+<p>&nbsp;</p>
+<p>ALASAN memagikan Score Code ini Kami rasa bisa membantu Anda untuk lebih kreatif dan inovatif dalam membuat situs ataupun Aplikasi.&nbsp;</p>
+<p>Penggunaan metode HTML ,CSS ,Dan Js Memang bukan hal Asing Bagi Progamer. Jadi saya rasa Ini akan mudah di pahami dan didesain ulang sesuai kreatifitas Anda tentunya.&nbsp;</p>
+<p>Cara Membuat 3D ANIMATION DENGAN HTML ,CSS3D, JS , DAN JQUERY BERIKUT ini merupakan Score Code yang digunakan:&nbsp;</p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp; &lt;meta charset="utf-8"&gt;</p>
+<p>&nbsp; &lt;meta name="viewport" content="width=device-width"&gt;</p>
+<p>&nbsp; &lt;title&gt;CSS 3D GIF JS Bin&lt;/title&gt;</p>
+<p>&lt;script src="https://code.jquery.com/jquery-1.10.2.js"&gt;&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&lt;style type="text/css"&gt;</p>
+<p>body{</p>
+<p>&nbsp; background: green;</p>
+<p>}</p>
+<p>.contenedor {</p>
+<p>&nbsp; -webkit-perspective: 500px;</p>
+<p>&nbsp; perspective: 500px;</p>
+<p>&nbsp; perspective-origin: 50% 50%;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>.cube, .cube .card{</p>
+<p>&nbsp; height: 290px;</p>
+<p>&nbsp; width: 290px;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>.cube {</p>
+<p>&nbsp; -webkit-transform-style: preserve-3d;</p>
+<p>&nbsp; transform-style: preserve-3d;</p>
+<p>&nbsp;</p>
+<p>&nbsp; -webkit-transform: rotateX(-30deg) rotateY(30deg);</p>
+<p>&nbsp; transform: rotateX(-30deg) rotateY(-30deg);</p>
+<p>&nbsp;</p>
+<p>&nbsp; margin: 150px auto;</p>
+<p>&nbsp;</p>
+<p>&nbsp; -webkit-animation: giro 20s infinite linear;</p>
+<p>&nbsp; animation: giro 20s infinite linear;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>.cube .card {</p>
+<p>&nbsp; position: absolute;</p>
+<p>&nbsp; border: 5px solid #ccc;</p>
+<p>&nbsp; opacity: 0.85;</p>
+<p>&nbsp; transition: 0.2s;</p>
+<p>}</p>
+<p>/* Pause animation on hover */</p>
+<p>.cube:hover{</p>
+<p>&nbsp; &nbsp; animation-play-state: paused;</p>
+<p>}</p>
+<p>.cube:hover .card{</p>
+<p>&nbsp; &nbsp;opacity: 1;</p>
+<p>&nbsp; &nbsp;transition: 0.2s;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>/*card frontal*/</p>
+<p>.cube .card:nth-child(1) {</p>
+<p>&nbsp; -webkit-transform: translateZ(150px);</p>
+<p>&nbsp; transform: translateZ(150px);</p>
+<p>}</p>
+<p>/*card posterior*/</p>
+<p>.cube .card:nth-child(2) {</p>
+<p>&nbsp; -webkit-transform: rotateY(180deg) translateZ(150px);</p>
+<p>&nbsp; transform: rotateY(180deg) translateZ(150px);</p>
+<p>}</p>
+<p>/*card izquierda*/</p>
+<p>.cube .card:nth-child(3) {</p>
+<p>&nbsp; -webkit-transform: rotateY(-90deg) translateZ(150px);</p>
+<p>&nbsp; transform: rotateY(-90deg) translateZ(150px);</p>
+<p>}</p>
+<p>/*card derecha*/</p>
+<p>.cube .card:nth-child(4) {</p>
+<p>&nbsp; -webkit-transform: rotateY(90deg) translateZ(150px);</p>
+<p>&nbsp; transform: rotateY(90deg) translateZ(150px);</p>
+<p>}</p>
+<p>/*card superior*/</p>
+<p>.cube .card:nth-child(5) {</p>
+<p>&nbsp; -webkit-transform: rotateX(90deg) translateZ(150px);</p>
+<p>&nbsp; transform: rotateX(90deg) translateZ(150px);</p>
+<p>}</p>
+<p>/*card inferior*/</p>
+<p>.cube .card:nth-child(6) {</p>
+<p>&nbsp; -webkit-transform: rotateX(-90deg) translateZ(150px);</p>
+<p>&nbsp; transform: rotateX(-90deg) translateZ(150px);</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>@-webkit-keyframes giro {</p>
+<p>&nbsp; &nbsp; 0% { -webkit-transform: rotateX(-45deg) rotateY(0deg); }</p>
+<p>&nbsp; &nbsp; 50% { -webkit-transform: rotateX(45deg) rotateY(360deg); }</p>
+<p>&nbsp; &nbsp; 100% { -webkit-transform: rotateX(-45deg) rotateY(720deg); }</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>@keyframes giro {</p>
+<p>&nbsp; &nbsp; 0% { transform: rotateX(-45deg) rotateY(0deg); }</p>
+<p>&nbsp; &nbsp; 50% { transform: rotateX(45deg) rotateY(360deg); }</p>
+<p>&nbsp; &nbsp; 100% { transform: rotateX(-45deg) rotateY(720deg); }</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>@-webkit-keyframes giro360 {</p>
+<p>&nbsp; &nbsp; 0% { -webkit-transform: rotateX(&nbsp; 0deg) rotateY(&nbsp; 0deg); }</p>
+<p>&nbsp; 100% { -webkit-transform: rotateX(360deg) rotateY(360deg); }</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>@keyframes giro360 {</p>
+<p>&nbsp; &nbsp; 0% { transform: rotateX(&nbsp; 0deg) rotateY(&nbsp; 0deg); }</p>
+<p>&nbsp; 100% { transform: rotateX(360deg) rotateY(360deg); }</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&lt;div class="ScriptTop"&gt;</p>
+<p>&nbsp; &nbsp; &lt;div class="rt-container"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-rt-4" id="float-right"&gt;</p>
+<p>&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- AD HERE --&gt;</p>
+<p>&nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p>&lt;header class="ScriptHeader"&gt;</p>
+<p>&nbsp; &nbsp; &lt;div class="rt-container"&gt;</p>
+<p>&nbsp; &nbsp; &lt;div class="col-rt-12"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="rt-heading"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;center&gt; &lt;h1&gt;CSS 3D IMAGE ISLAMI&lt;/h1&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Cube animated clickable images with CSS3&lt;/p&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; desain by &lt;a href="https://kata-h.blogspot.com"&gt; AL HIKMAH&lt;/a&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;&lt;/center&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp;&nbsp;</p>
+<p>&lt;/header&gt;</p>
+<p>&nbsp;</p>
+<p>&lt;section&gt;</p>
+<p>&nbsp; &nbsp; &lt;div class="rt-container"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-rt-12"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="Scriptcontent"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>&lt;!-- partial:index.partial.html --&gt;</p>
+<p>&lt;div class="contenedor"&gt;&nbsp;</p>
+<p>&lt;div class="cube"&gt;</p>
+<p>&lt;div class="card"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="https://www.alhikmah.my.id/search/label/SHOLAWAT?m=1"&gt;</p>
+<p>&lt;img src="https://1.bp.blogspot.com/-RM8G2B3LWDs/YTjKur_kt6I/AAAAAAAAEBU/OUAPMc_3Bus-ZM_o7j-YQRWcemSKDlrOwCLcBGAsYHQ/s800/Aw1.gif" title="makkah" alt="makkah" height="290px" width="290px" /&gt;</p>
+<p>&nbsp; &lt;/a&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&lt;div class="card"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="https://www.alhikmah.my.id/search/label/Islam?m=1"&gt;</p>
+<p>&lt;img src="https://1.bp.blogspot.com/-uccBAji_CGU/YTjKxPvacjI/AAAAAAAAEBg/82c_h16lfysx1JaQBvr4nuZy--35snh9gCLcBGAsYHQ/s500/Aw3.gif" title="kaligrafi" alt="kaligrafi" width="290px" height="290px" /&gt;</p>
+<p>&nbsp; &lt;/a&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&lt;div class="card"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="https://www.alhikmah.my.id/search/label/KISAH%20HIKMAH?m=1"&gt;</p>
+<p>&lt;img src="https://1.bp.blogspot.com/-q0zS3MViLvM/YTjKp06xwbI/AAAAAAAAEBQ/ego7QdxbCD8Z9ff3GssXfsTVAr4iMPW6QCLcBGAsYHQ/s540/Aw2.gif" title="MASJID" alt="MASJID" width="290px" height="290px" /&gt;</p>
+<p>&nbsp; &lt;/a&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&lt;div class="card"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="https://www.alhikmah.my.id/search/label/media%20dakwah?m=1"&gt;</p>
+<p>&lt;img src="https://1.bp.blogspot.com/-mQ9n36rwR5I/YTjKxVHb0YI/AAAAAAAAEBk/he1_m7MUAHsws3pwKVoOqSQ7rIY7hAnQQCLcBGAsYHQ/s556/Visual%2BLibrary.gif" title="masjid " alt="masjid " width="290px" height="290px" /&gt;</p>
+<p>&nbsp; &lt;/a&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&lt;div class="card"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="https://kata-h.blogspot.com"&gt;</p>
+<p>&lt;img src="https://1.bp.blogspot.com/--NeI3_Yh-rs/YTjPDZj0qKI/AAAAAAAAECI/y0Ki0cAsOYsrEQcoK4iu5sjFbBiCGi3ewCLcBGAsYHQ/s800/20%2BReally%2BUseful%2BUI%2BAnimation%2BTutorials%2BEvery%2BDesigner%2BShould%2BKnow.gif" title="AL HIKMAH" alt="AL HIKMAH" width="290px" height="290px" /&gt;</p>
+<p>&nbsp; &lt;/a&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&lt;div class="card"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="https://www.alhikmah.my.id/2020/10/kisah-kisah-25-nabi-dan-rasul-berserta.html?m=1"&gt;</p>
+<p>&lt;img src="https://1.bp.blogspot.com/-qEA84bBgh4Y/YTjO5gyGmXI/AAAAAAAAECE/tNBFNrVGjRgrJGuf7MILaREHCTkO2wUKwCLcBGAsYHQ/s500/Aw4.gif" width="290px" height="290px" /&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;!-- partial --&gt;</p>
+<p>&nbsp; &nbsp; &lt;script&gt;</p>
+<p>&nbsp; &nbsp; var url = "https://kata-h.blogspot.com/"; // url tujuan</p>
+<p>&nbsp; &nbsp; var count = 25; // dalam detik</p>
+<p>&nbsp; &nbsp; function countDown() {</p>
+<p>&nbsp; &nbsp; if (count &gt; 0) {</p>
+<p>&nbsp; &nbsp; count--;</p>
+<p>&nbsp; &nbsp; var waktu = count + 1;</p>
+<p>&nbsp; &nbsp; $('#kata').html('&lt;b&gt;Halaman Ini Akan Otomatis Di Redirect KE &lt;/b&gt; ' + url + ' dalam ' + waktu + ' detik.');</p>
+<p>&nbsp; &nbsp; setTimeout("countDown()", 1000);</p>
+<p>&nbsp; &nbsp; } else {</p>
+<p>&nbsp; &nbsp; window.location.href = url;</p>
+<p>&nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; countDown();</p>
+<p>&nbsp; &nbsp; &lt;/script&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>&nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&lt;/section&gt;</p>
+<p>&nbsp; &nbsp; &nbsp;&lt;!--</p>
+<p>&nbsp; &nbsp; &nbsp;Copyright (c) 2021, Aw Score Code-Neumorphic form Twiter- AL HIKMAH [ Desain by : Aw Group Channel ] All rights reserved.</p>
+<p>&nbsp; &nbsp; &nbsp;For licensing, see LICENSE.html or https://kata-h.blogspot.com/p/license.html--&gt;</p>
+<p>&nbsp; &nbsp; &nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; &nbsp;&lt;!-- ANALYTICS --&gt;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&lt;script src="https://code.jquery.com/jquery-2.2.4.js"&gt;&lt;/script&gt;</p>
+<p>&nbsp;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>Referensi dari situs : <a href="https://senuansa.blogspot.com">senuansa</a></p>
+<p>Contoh&nbsp; Hasilnya yaitu sebagai berikut ;&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="ScriptTop">
+<div class="rt-container">
+<div class="col-rt-4">
+<div class="rt-container">
+<div class="col-rt-12">
+<div class="rt-heading">
+<div style="text-align: center;">
+<h1>CSS 3D IMAGE ISLAMI</h1>
+<p>Cube animated clickable images with CSS3</p>
+desain by <a href="https://kata-h.blogspot.com"> AL HIKMAH</a></div>
+</div>
+</div>
+</div>
+<div class="rt-container">
+<div class="col-rt-12">
+<div class="Scriptcontent">
+<div class="contenedor">
+<div class="cube">
+<div class="card"><a href="https://www.alhikmah.my.id/search/label/SHOLAWAT?m=1"> <img title="makkah" src="https://1.bp.blogspot.com/-RM8G2B3LWDs/YTjKur_kt6I/AAAAAAAAEBU/OUAPMc_3Bus-ZM_o7j-YQRWcemSKDlrOwCLcBGAsYHQ/s800/Aw1.gif" alt="makkah" width="290" height="290" /> </a></div>
+<div class="card"><a href="https://www.alhikmah.my.id/search/label/Islam?m=1"> <img title="kaligrafi" src="https://1.bp.blogspot.com/-uccBAji_CGU/YTjKxPvacjI/AAAAAAAAEBg/82c_h16lfysx1JaQBvr4nuZy--35snh9gCLcBGAsYHQ/s500/Aw3.gif" alt="kaligrafi" width="290" height="290" /> </a></div>
+<div class="card"><a href="https://www.alhikmah.my.id/search/label/KISAH%20HIKMAH?m=1"> <img title="MASJID" src="https://1.bp.blogspot.com/-q0zS3MViLvM/YTjKp06xwbI/AAAAAAAAEBQ/ego7QdxbCD8Z9ff3GssXfsTVAr4iMPW6QCLcBGAsYHQ/s540/Aw2.gif" alt="MASJID" width="290" height="290" /> </a></div>
+<div class="card"><a href="https://www.alhikmah.my.id/search/label/media%20dakwah?m=1"> <img title="masjid" src="https://1.bp.blogspot.com/-mQ9n36rwR5I/YTjKxVHb0YI/AAAAAAAAEBk/he1_m7MUAHsws3pwKVoOqSQ7rIY7hAnQQCLcBGAsYHQ/s556/Visual%2BLibrary.gif" alt="masjid" width="290" height="290" /> </a></div>
+<div class="card"><a href="https://kata-h.blogspot.com"> <img title="AL HIKMAH" src="https://1.bp.blogspot.com/--NeI3_Yh-rs/YTjPDZj0qKI/AAAAAAAAECI/y0Ki0cAsOYsrEQcoK4iu5sjFbBiCGi3ewCLcBGAsYHQ/s800/20%2BReally%2BUseful%2BUI%2BAnimation%2BTutorials%2BEvery%2BDesigner%2BShould%2BKnow.gif" alt="AL HIKMAH" width="290" height="290" /> </a></div>
+<div class="card"><a href="https://www.alhikmah.my.id/2020/10/kisah-kisah-25-nabi-dan-rasul-berserta.html?m=1"> <img src="https://1.bp.blogspot.com/-qEA84bBgh4Y/YTjO5gyGmXI/AAAAAAAAECE/tNBFNrVGjRgrJGuf7MILaREHCTkO2wUKwCLcBGAsYHQ/s500/Aw4.gif" alt="Aw4.gif" width="290" height="290" /> </a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
