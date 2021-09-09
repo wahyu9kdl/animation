@@ -52,3 +52,5 @@ Preview / Excample
 DEMO : <a href="senuansa.blogspot.com"> SENUANSA</a>
 
 Score Code 
+
+<a href="https://github.com/wahyu9kdl/animation/blob/main/3D%20GIF">Download 3D Animation GIF </a>
