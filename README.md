@@ -49,7 +49,7 @@ Preview / Excample
 
 3D Animation GIF.
 
-DEMO : <a href="senuansa.blogspot.com"> SENUANSA</a>
+DEMO : <a href="https://senuansa.blogspot.com/2021/09/css-3d.html"> SENUANSA</a>
 
 Score Code 
 
