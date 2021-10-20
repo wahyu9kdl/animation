@@ -1,4 +1,4 @@
-# 🔗 Animation CSS 3D
+# Animation CSS 3D
 
 Animation 3D Dirgahayu Republik INDONESIA 🇮🇩🇮🇩🇮🇩
 
@@ -56,7 +56,7 @@ Score Code
 
 <a href="https://github.com/wahyu9kdl/animation/blob/main/3D%20GIF">Download 3D Animation GIF </a>
 
-# 🔗 Youtube Channel
+# Youtube Channel
 <a href="https://youtu.be/JMzBMqlaDhI"> Live Youtube Channel </a> Cara membuat Animation Css 3d Image / Gif pada Website .
 
 
