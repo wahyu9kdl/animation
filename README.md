@@ -7,7 +7,7 @@ Kami Buat Animasi 3D ini Menggunakan Image.png , Image Gif , dan juga menggunaka
 HTML,CSS3,JS , @keyframes , kami desain secara Sederhana namun berharap mempunyai pesannyang bermakna.
 
 Rilis / Penayangan Perdana Animation 3D Dirgahayu Indonesia ini 
-Di Situs AL HIKMAH ( www.alhikmah.my.id )
+Di Situs AL HIKMAH ( https://www.alhikmah.my.id/p/ampnews.html )
 
 
 ♻️ Kami memberi anda Ruang Untuk Berkarya  dengan mengembangkan Score Code Ini.
