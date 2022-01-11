@@ -9,7 +9,8 @@ A simple and easy jQuery plugin for CSS animated page transitions.
 
 
 ## Demo & Installation
-http://wahyu9kdl.github.io/animation/
+
+http://git.wahyu9kdl.com/animation/
 
 
 ## Development
