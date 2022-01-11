@@ -1,8 +1,8 @@
 # [Animation](http://wahyu9kdl.github.io/animation)
 
 ![Bower version](https://img.shields.io/bower/v/animsition.svg?style=flat-square)
-[![npm version](https://img.shields.io/npm/v/animsition.svg?style=flat-square)](https://www.npmjs.com/package/animsition)
-[![Build Status](https://img.shields.io/travis/blivesta/animsition/master.svg?style=flat-square)](https://travis-ci.org/blivesta/animsition)
+[![npm version](https://img.shields.io/npm/v/animsition.svg?style=flat-square)](https://www.npmjs.com/package/animation)
+[![Build Status](https://img.shields.io/travis/blivesta/animsition/master.svg?style=flat-square)](https://travis-ci.org/wahyu9kdl/animation)
 
 
 A simple and easy jQuery plugin for CSS animated page transitions.
@@ -49,7 +49,7 @@ Please check that everything works before opening a pull-request.
 
 
 ## Contributors
-- [@blivesta](https://github.com/blivesta) (Maintainer)
+- [@wahyu9kdl](https://github.com/wahyu9kdl) (Maintainer)
 - [@ungki](https://github.com/ungki) (Maintainer)
 - [@gauravpadia](https://github.com/gauravpadia) (Maintainer)
 - [@munsonbh](https://github.com/munsonbh)
@@ -77,7 +77,7 @@ Released under the [MIT](https://github.com/wahyu9kdl/animation/blob/master/LICE
 ### [Page Transition](http://wordpress.org/plugins/page-transition/ "Page Transition")
 - @wahyu9kdl
 - [@wahyu9kdl](https://github.com/wahyu9kdl)
-- @wahyu9kdl
+- @Awfanspage
 
 # Animation CSS 3D
 
