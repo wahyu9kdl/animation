@@ -1,0 +1,17 @@
+.animation,
+.animation-overlay {
+  position: relative;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+
+/**
+ * overlay option
+ */
+.animation-overlay-slide {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
