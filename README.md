@@ -46,7 +46,7 @@ Preview / Excample
 
 3D Animation GIF.
 
-DEMO : <a href="https://wahyu9kdl.github.io/animation/index.html"> SENUANSA</a>
+DEMO : <a href="https://wahyu9kdl.github.io/animation/index.html">ANIMATION</a>
 
 Score Code 
 
