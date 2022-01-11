@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>wahyu9kdl: data options - Animation</title>
+  <link href="sandbox.css" rel="stylesheet">
+  <link href="../dist/css/animation.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="animation item bg-cyan" data-animation-in-class="fade-in-up-sm" data-animation-out-class="fade-out-up-sm" data-animation-in-duration="1000">
+    <h1>Animation: data options 1</h1>
+  </div>
+
+
+  <div class="animation item bg-pink" data-animation-in-class="fade-in-down-sm" data-animation-out-class="fade-out-down-sm" data-animation-in-duration="2000">
+    <h1>Animation: data options 2</h1>
+  </div>
+
+  <div class="animation">
+
+    <h2>Defaults</h2>
+    <ol>
+      <li><a class="animation-link" href="index.html">Basic</a></li>
+      <li><a class="animation-link" href="options.html">Options</a></li>
+      <li><a class="animation-link" href="data-options.html">Data options</a></li>
+      <li><a class="animation-link" href="methods-in.html">Methods in</a></li>
+      <li><a class="animation-link" href="methods-out.html">Methods out</a></li>
+    </ol>
+
+    <h2>Overlays</h2>
+    <ol>
+      <li><a class="animation-link" href="overlay1.html">Overlay1</a></li>
+      <li><a class="animation-link" href="overlay2.html">Overlay2</a></li>
+    </ol>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <script src="../dist/js/animation.min.js" charset="utf-8"></script>
+  <script>
+  $( document ).ready(function() {
+    var $animation = $('.animation');
+    $animation
+      .animation()
+      .one('animation.inStart',function(){
+        $(this).append('<h2 class="target">Callback: Start</h2>');
+        console.log('event -> inStart');
+      })
+      .one('animation.inEnd',function(){
+        $('.target', this).html('Callback: End');
+        console.log('event -> inEnd');
+      })
+      .one('animation.outStart',function(){
+        console.log('event -> outStart');
+      })
+      .one('animation.outEnd',function(){
+        console.log('event -> outEnd');
+      });
+  });
+  </script>
+
+</body>
+</html>

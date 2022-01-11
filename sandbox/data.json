@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "inClass" : "fade-in-up",
+      "outClass": "fade-out-up",
+      "image": " https://raw.githubusercontent.com/wahyu9kdl/animation/main/3dgifmaker04194.gif ",
+      "url": "./methods-in.html"
+    }, {
+      "inClass" : "fade-in-down",
+      "outClass": "fade-out-down",
+      "image": " https://raw.githubusercontent.com/wahyu9kdl/wahyu9kdl/main/Aw3.gif ",
+      "url": "./methods-in.html"
+    }
+  ]
+}
